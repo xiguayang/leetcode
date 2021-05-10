@@ -8,7 +8,7 @@ public class PalindromeList {
          * and compare the right half list with the left*/
         ListNode midNode = middleNode(head);
         ListNode reverseRight = reverse(midNode);
-        while(head!=null){
+        while(reverseRight!=null){
             if(reverseRight.val != head.val){
                 return false;
             }
@@ -20,8 +20,15 @@ public class PalindromeList {
         return true;
     }
     public static ListNode middleNode(ListNode head){
-        return head;
+        ListNode fast = head;
+        ListNode slow = head;
+        while(fast!=null && fast.next!=null){
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        return slow;
     }
+
     public static ListNode reverse(ListNode head){
         if(head == null || head.next == null){
             return head;
@@ -39,10 +46,10 @@ public class PalindromeList {
 
 
     public static void main(String[] args) {
-        ListNode l = new ListNode(new int[]{1, 1,2, 1});
-        ListNode re = reverse(l);
-        //l.printList();
-        re.printList();
-        //isPalindrome(l);
+        ListNode l = new ListNode(new int[]{1,2,2, 1});
+        //ListNode re = reverse(l);
+        l.printList();
+        //re.printList();
+        System.out.println(isPalindrome(l));
     }
 }
