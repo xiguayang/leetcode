@@ -1,3 +1,5 @@
+package Tree;
+
 /**#116 Flatten BT to a linked list[M]
 Given the root of a BT, the return linked list s
 hould use the same TreeNode class w
@@ -14,13 +16,13 @@ public class FlattenToLL{
   public void flatten(TreeNode root) {
     //base case
     if(root == null){
-      return root;
+      return;
     }
     //1. flat the left treenode of the root to linked list
     flatten(root.left);
-    TreeNode leftTree = root.left
+    TreeNode leftTree = root.left;
     //2. flat the right treenode of the root to linked list
-    flatten(root.rigth);
+    flatten(root.right);
     TreeNode rightTree = root.right;
 
     //3. make the whole leftTree as the root's right

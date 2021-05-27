@@ -1,0 +1,16 @@
+what is the property of BST:
+1. For every node in BST, every node's value in its left sub tree is less than val of the node,
+    and every node's value in its right sub tree is larger than the val of the node
+2. For every node, its left sub tree and right sub tree are both BST
+***IMPORTANT****:
+3. The values from traversal of inorder(LDR) are increasing.
+    BST 的中序遍历结果是有序的（升序）。
+    void traverse(TreeNode root){
+        if(root==null) return;
+
+        traverse(root.left);
+        /******inorder*****/
+        traverse(root.right);
+    }
+
+4. BST 增删查改都可以是O(LogN)的复杂度

@@ -1,3 +1,7 @@
+package Tree;
+
+import java.util.LinkedList;
+
 /**# 297. Serialize and Deserialize Binary Tree[H]*/
 
 public class PreOrderTree{
@@ -19,7 +23,7 @@ public class PreOrderTree{
     String SEPERATE = ",";
     String NULL = "null";
     /*Mian method*/
-    public String serialize(TreeNode root){
+    public String serializeUsingStringBuffer(TreeNode root){
         StringBuilder sb = new StringBuilder();
         serialize(root, sb);
         return sb.toString();
