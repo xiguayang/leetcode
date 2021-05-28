@@ -1,3 +1,11 @@
+package Tree;
+
+import apple.laf.JRSUIUtils;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
 #116填充每个节点的下一个右侧节点指针[M]
 Populating next right pointers in each node
@@ -37,9 +45,9 @@ public class PopulatingNextRightPointer{
     */
     //Node 5 and Node 6 are not from one parent root,
     //so we need connect two nodes not from one parent
-    //we have to add paremeter, not from one root, but two adjcent nodes as roots
+    //we have to add parameter, not from one root, but two adjacent nodes as roots
     //将每一层二叉树节点连接起来」可以细化成「将每两个相邻节点都连接起来」：
-    public TreeNode connect(TreeNode root)
+    public TreeNode connect(TreeNode root){
       //  primary function
       if (root==null) return null;
       connectTwoNodes(root.left, root.right);
@@ -58,7 +66,31 @@ public class PopulatingNextRightPointer{
       connectTwoNodes(node2.left, node2.right);
       //connect two nodes from two different parent
       connectTwoNodes(node1.right,node2.left);
+    }
 
+    public TreeNode connectLevelOrder(TreeNode root){
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            ArrayList<TreeNode> temp = new ArrayList<>();
+            for(int i = 0; i<size; i++){
+                TreeNode node = queue.poll();
+                temp.add(node);
+                if(node.left!=null){
+                    queue.add(node.left);
+                }
+                if(node.right!=null){
+                    queue.add(node.right);
+                }
+            }
+            int i = 0;
+            while(i<temp.size()){
+                temp.get(i).next=temp.get(i+1);
+                i++;
+            }
+        }
+        return root;
     }
 
 }
