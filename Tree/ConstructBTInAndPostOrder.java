@@ -1,3 +1,5 @@
+package Tree;
+
 /**106. Construct Binary Tree from Inorder and Postorder Traversal[M]
 Given two integer arrays inorder and postorder
 where inorder is the inorder traversal of a binary tree

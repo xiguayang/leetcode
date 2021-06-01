@@ -1,3 +1,5 @@
+package Tree;
+
 /**105. Construct Binary Tree from Preorder and Inorder Traversal [M]
 
 Given two integer arrays preorder and inorder
@@ -39,7 +41,7 @@ public class ConstructBTPreAndInOrder{
       int inStart = 0;
       int inEnd = inorder.length-1;
       int preStart = 0;
-      return build(preorder, preStart, inorder,inStart,inEnd)；
+      return build(preorder, preStart, inorder,inStart,inEnd);
   }
 
 

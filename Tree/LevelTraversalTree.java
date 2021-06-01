@@ -1,3 +1,8 @@
+package Tree;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class LevelTraversalTree{
     void traverse(TreeNode root){
        if(root == null) return;
@@ -5,9 +10,9 @@ public class LevelTraversalTree{
        Queue<TreeNode> q = new LinkedList<>();
        q.offer(root);
 
-       while(!q.isEmpty){
+       while(!q.isEmpty()){
           //poll(): retreive and remove the head of the queue, return null if queue is empty
-          TreeNode cur = q.poll(){};
+          TreeNode cur = q.poll();
 
           /*****level traverse code********/
           System.out.println (cur.val);

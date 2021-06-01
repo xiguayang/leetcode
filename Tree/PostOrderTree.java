@@ -1,3 +1,7 @@
+package Tree;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**# 297. Serialize and Deserialize Binary Tree[H]*/
 
@@ -10,7 +14,7 @@ public class PostOrderTree{
         String leftSubTree = serialize(root.left);
         String rightSubTree = serialize(root.right);
 
-        return +leftSubTree + ","+rightSubTree +","+ root.val;
+        return leftSubTree + ","+rightSubTree +","+ root.val;
 
     }
 
@@ -20,7 +24,7 @@ public class PostOrderTree{
     //可以用于高效拼接字符串，所以也可以认为是一个列表
     String SEPERATE = ",";
     String NULL = "null";
-    public String serialize(TreeNode root){
+    public String serializeI(TreeNode root){
         StringBuilder sb = new StringBuilder();
         serialize(root, sb);
         return sb.toString();
@@ -44,15 +48,15 @@ public class PostOrderTree{
     /*Main method*/
     public TreeNode deserialize(String data) {
         //use linked list to represent the string: as a queue
-        ArrayList<String> nodes = new ArrayList<>();
+        LinkedList<String> nodes = new LinkedList<>();
         for(String s : data.split(",")){
-            nodes.addLast(s);
+            nodes.add(s);
         }
         //its now a linkedlist to store all nodes, use a helper method
         return deserialize(nodes);
     }
     /*a helper method for deserialize*/
-    public TreeNode deserialize(ArrayList<String> nodes){
+    public TreeNode deserialize(LinkedList<String> nodes){
         if(nodes.isEmpty()) return null;
         /********postOrder*********/
         //The last element of the arraylist is the root

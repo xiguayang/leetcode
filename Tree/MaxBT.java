@@ -1,3 +1,5 @@
+package Tree;
+
 /** #654 Maximum Binary Tree [M]
 You are given an integer array nums with no duplicates.
 A maximum binary tree can be built recursively from nums using the following algorithm:

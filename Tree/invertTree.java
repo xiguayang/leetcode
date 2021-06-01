@@ -1,4 +1,6 @@
- /**# 226 invert BT
+package Tree;
+
+/**# 226 invert BT
  only need to switch the left and right node of each root
 */
 class invertTree {
