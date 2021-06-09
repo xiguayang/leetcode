@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 /**
  * 3 Parts of a Successful Binary Search: Binary Search is generally composed of
@@ -16,11 +17,11 @@ public class BinarySearchArray {
      * comparing to the element's neighbors (or use specific elements around it) No
      * post-processing required because at each step, you are checking to see if the
      * element has been found. If you reach the end, then you know the element is
-     * not found Distinguishing Syntax: Initial Condition: left = 0, right =
-     * length-1 Termination: left > right Searching Left: right = mid-1 Searching
-     * Right: left = mid+1
+     * not found Distinguishing Syntax: Initial Condition: left = 0, right =length-1
+     * Termination: left > right Searching Left: right = mid-1 Searching Right: left
+     * = mid+1
      */
-    public int search(int[] nums, int target) {
+    public int binarySearchI(int[] nums, int target) {
         if (nums == null || nums.length == 0)
             return -1;
         int mid = 0;
@@ -125,6 +126,80 @@ public class BinarySearchArray {
             }
         }
         return -1;
+    }
+
+    /**
+     * Template #2 is an advanced form of Binary Search. It is used to search for an
+     * element or condition which requires accessing the current index and its
+     * immediate right neighbor's index in the array.
+     * 
+     * 1. Search Condition needs to access element's immediate right neighbor 2. Use
+     * element's right neighbor to determine if condition is met and decide whether
+     * to go left or right 3. Gurantees Search Space is at least 2 in size at each
+     * step 4. Post-processing required. Loop/Recursion ends when you have 1 element
+     * left. Need to assess if the remaining element meets the condition. Initial
+     * Condition: left = 0, right = length Termination: left == right Searching
+     * Left: right = mid Searching Right: left = mid+1
+     */
+
+    public int binarySearchII(int[] nums, int target) {
+        if (nums == null || nums.length == 0) {
+            return -1;
+        }
+        int left = 0;
+        int right = nums.length - 1;
+        while (left < right) {
+            // prevent (left+right) overflow
+            int mid = left + (right - left) / 2;
+            if (nums[mid] == target)
+                return mid;
+            else if (nums[mid] < target) {
+                left = mid + 1;
+            } else {
+                // including mid itself
+                right = mid;
+            }
+        }
+        // post -processing
+        // end condition: left ==right
+        if (left != nums.length && nums[left] == target)
+            return left;
+        return -1;
+    }
+
+    /** First Bad Version */
+
+    /**
+     * 162[M] Find Peak Element A peak element is an element that is strictly
+     * greater than its neighbors. Given an integer array nums, find a peak element,
+     * and return its index. If the array contains multiple peaks, return the index
+     * to any of the peaks. You may imagine that nums[-1] = nums[n] = -∞. You must
+     * write an algorithm that runs in O(log n) time. 1 <= nums.length <= 1000 -231
+     * <= nums[i] <= 231 - 1 nums[i] != nums[i + 1] for all valid i.
+     */
+    public static int findPeakElement(int[] nums) {
+
+        // 1,4,5,2,4,6,7,8,9
+        // peak is 2
+        // find mid, if(mid-1<mid >mid+1) peak = mid
+        // else if mid-1<mid<mid+1===> check right part: left = mid+1, check left part:
+        // right = mid-1
+        // else if mid<mid-1:check==> check left part: right = mid
+        // ========> due to mid might be 0, mid-1 will exceeds the limit
+        // only consider mid>mid+1 and mid<mid+1
+        // if (mid>mid+1): check left: right = mid
+        // if (mid< mid+1):
+        int left = 0;
+        int right = nums.length - 1;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] > nums[mid + 1]) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return left;
     }
 
     public static void main(String[] args) {
