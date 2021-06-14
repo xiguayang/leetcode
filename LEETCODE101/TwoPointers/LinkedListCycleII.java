@@ -13,15 +13,6 @@ package TwoPointers;
  */
 
 public class LinkedListCycleII {
-    class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-    }
 
     // Solution: Floyd slow and fast pointers approach
     // 1. Given two pointers both start from the start of the linked list. fast
