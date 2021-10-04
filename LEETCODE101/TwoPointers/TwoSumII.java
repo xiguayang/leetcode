@@ -1,5 +1,7 @@
 package TwoPointers;
 
+import java.util.Arrays;
+
 /**
  * 167. Two Sum II - Input array is sorted[E]
  * 
@@ -38,5 +40,40 @@ public class TwoSumII {
             }
         }
         return null;
+    }
+
+    // better: nlog(n)
+    public int[] twoSumUnsorted(int[] nums, int target) {
+        // Step1: copy the array to a new array and sort it using quick sort, O(nlogn)
+        int[] numsCopy = Arrays.copyOf(nums, nums.length);
+        Arrays.sort(numsCopy);
+        int l = 0;
+        int r = numsCopy.length - 1;
+        int[] result = new int[2];
+        // Step2: find the two number sums to target by two pointers (O(n))
+        while (l < r) {
+            int tempSum = numsCopy[l] + numsCopy[r];
+            if (tempSum == target) {
+                break;
+            } else if (tempSum < target) {
+                l = l + 1;
+            } else {
+                r = r - 1;
+            }
+        }
+        // Step3: find the indexes of the two numbers in original array o(n)
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == numsCopy[l]) {
+                result[0] = i;
+                break;
+            }
+        }
+        for (int i = nums.length - 1; i >= 0; i--) {
+            if (nums[i] == numsCopy[r]) {
+                result[1] = i;
+                break;
+            }
+        }
+        return result;
     }
 }
