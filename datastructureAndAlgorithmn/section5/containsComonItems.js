@@ -36,19 +36,23 @@ containsCommonItems(array1, array2);
 //  x: true
 // }
 // array2[index] === obj.properties
-function containsCommonItems2(arr1, arr2) {
-	//can we assume alwarys 2 params?
-	//check the input
-	//loop through first array and create an object
-	//where properties === items in the array
+//loop through first array and create an object
+//where properties === items in the array
+function mapArray(arr) {
 	let map = {};
-	for (let i = 0; i < arr1.length; i++) {
-		if (!map[i]) {
+	for (let i = 0; i < arr.length; i++) {
+		if (!map[arr[i]]) {
 			//check if the item has existed in map
-			const item = arr1[i];
+			const item = arr[i];
 			map[item] = true;
 		}
 	}
+	return map;
+}
+function containsCommonItems2(arr1, arr2) {
+	//can we assume alwarys 2 params?
+	//check the input
+	let map = mapArray(arr1);
 	//console.log(map)
 	//loop through seconde array and check if item in //second array existes on created object
 	for (let j = 0; j < arr2.length; j++) {
