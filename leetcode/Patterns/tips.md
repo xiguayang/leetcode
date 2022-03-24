@@ -1,6 +1,6 @@
 ### If input array is sorted then
 - Binary search
-- Two pointers
+- Two pointers: one at the begining one at the end
 
 ### If asked for all permutations/subsets then
 - Backtracking
@@ -15,6 +15,7 @@
 
 ### If given a linked list then
 - Two pointers
+    - fast and slow to find a cycle, get the middle
 
 ### If recursion is banned then
 - Stack
