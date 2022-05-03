@@ -23,7 +23,7 @@ public class FindDuplicatesInArray {
         List<Integer> res = new ArrayList<Integer>();
         for(int i =0;i<nums.length;i++){
             int newIndex = Math.abs(nums[i])-1;
-            if(nums[newIndex]<0){
+            if(nums[newIndex]>0){
                 nums[newIndex] = - nums[newIndex];
             }else{
                 res.add(Math.abs(nums[i]));

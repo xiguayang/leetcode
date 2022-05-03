@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import Tree.TreeNode;
+
 //Q98 check if the given BT a valid BST
 //solution: inordertravel, if sorted, it is a BST
 public class IsBST {
@@ -6,7 +11,7 @@ public class IsBST {
 
     public boolean isValidBSTByInOrder(TreeNode root) {
         inOrder(root);
-        return isSorted(list);
+        return List.isSorted(list);
     }
 
     private void inOrder(TreeNode root) {
