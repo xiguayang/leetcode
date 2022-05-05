@@ -2,6 +2,10 @@
  * 136. Single Number: array Bit Manipulate
  * has only one unique element in array, using XOR
  */
+package Patterns.Arrays.Easy;
+
+import java.util.HashSet;
+
 public class SingleNums {
     public int singleNumber(int[] nums) {
         //Method 1: O(N) with HashSet

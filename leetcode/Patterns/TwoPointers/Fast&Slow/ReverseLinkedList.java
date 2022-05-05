@@ -1,3 +1,5 @@
+import LinkedList.ListNode;
+
 public class ReverseLinkedList {
     public ListNode reverseList(ListNode head) {
         //1 or no node

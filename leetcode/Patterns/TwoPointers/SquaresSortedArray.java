@@ -6,6 +6,9 @@
  * need sorted again
  * Follow up: O(N) using 2 pointers
  */
+package Patterns.TwoPointers;
+
+import java.util.*;
 public class SquaresSortedArray {
     //Using 2 Pointers, one at the start and one at the end
     //put them into result from the end(sorted, so the larger one is at then end)

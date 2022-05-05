@@ -1,4 +1,9 @@
 /**543 Diameter of BT: the length of the longest path between any 2 nodes in a tree, may or may not pass through the root */
+package Patterns.DFS;
+
+import java.util.*;
+
+import Patterns.TreeNode;
 public class DiameterOfBT {
     // for every node, the diameter pass it is the max depth of its left node + max depth of its right node
     //int maxDiameter = 0;
@@ -8,7 +13,7 @@ public class DiameterOfBT {
             return 0;
         }
         //dia of the root 
-        int diameter = depth(root.left)+depth(root.right);
+        int diameter = maxDepth(root.left)+maxDepth(root.right);
         // dia of the left tree
         int leftDiameter = diameterOfBinaryTree(root.left);
         //dia of the right tree

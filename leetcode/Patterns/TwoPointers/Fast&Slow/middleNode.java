@@ -1,3 +1,4 @@
+import LinkedList.ListNode;
 
 /**876. Middle of the Linked List */
 public class middleNode {

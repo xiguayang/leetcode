@@ -1,4 +1,4 @@
-package linkedlist;
+package LinkedList;
 /** #237 Delete the given node in linked list directly [E]
  * Write a function to delete a node in a singly-linked list.
  * You will not be given access to the head of the list,

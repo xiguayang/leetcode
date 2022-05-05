@@ -1,4 +1,4 @@
-package linkedlist;
+package LinkedList;
 /**# 160. Intersection of Two Linked Lists [E]
  *
  * Given the heads of two singly linked-lists headA and headB,

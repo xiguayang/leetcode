@@ -1,3 +1,7 @@
+package Patterns.DFS;
+
+import Patterns.TreeNode;
+
 public class invertBT {
     public TreeNode invertTree(TreeNode root) {
         if(root==null ) return root;

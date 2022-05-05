@@ -1,6 +1,8 @@
-import java.util.Stack;
+package Patterns.DFS;
 
-import javax.swing.tree.TreeNode;
+import java.util.*;
+
+import Patterns.TreeNode;
 
 /**
  * 112 PathSum: has a path(from root to leaf) sums up to target

@@ -1,4 +1,4 @@
-package linkedlist;
+package LinkedList;
 /**#203. Remove Linked List Elements [E]
  * Given the head of a linked list and an integer val,
  * remove all the nodes of the linked list that has Node.val == val,

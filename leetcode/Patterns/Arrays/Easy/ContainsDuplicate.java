@@ -1,3 +1,6 @@
+package Patterns.Arrays.Easy;
+import java.util.HashSet;
+
 // # 217. Array
 // Given an integer array nums, 
 // return true if any value appears at least twice in the array, 

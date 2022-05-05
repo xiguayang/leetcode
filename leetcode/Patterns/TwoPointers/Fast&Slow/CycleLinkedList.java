@@ -1,3 +1,5 @@
+import LinkedList.ListNode;
+
 public class CycleLinkedList {
     public boolean hasCycle(ListNode head){
         //if the given linkedlist is null, return false

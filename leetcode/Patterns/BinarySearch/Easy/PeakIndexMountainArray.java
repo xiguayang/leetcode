@@ -3,6 +3,7 @@
  * arr.length >=3, is guaranteed to be a mountain
  * return i where arr[i-1] < arr[i] > arr[i+1]
  */
+package Patterns.BinarySearch.Easy;
 public class PeakIndexMountainArray {
     public int peakIndexInMountainArray(int[] arr) {
         //return i where arr[i-1] < arr[i] > arr[i+1]

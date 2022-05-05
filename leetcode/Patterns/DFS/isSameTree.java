@@ -1,7 +1,8 @@
-import java.util.LinkedList;
-import java.util.Queue;
+package Patterns.DFS;
 
-import javax.swing.tree.TreeNode;
+import java.util.*;
+
+import Patterns.TreeNode;
 /**100 isSameTree */
 public class isSameTree {
     //Method1:Time: O(N) Space: O(logN)in the best case of completely balanced tree 
@@ -14,7 +15,7 @@ public class isSameTree {
             return false;
         }
         if(p.val==q.val){
-            return isSameTree(p.left,q.left) && isSameTree(p.right,q.right);
+            return isSameTreeQueue(p.left,q.left) && isSameTreeQueue(p.right,q.right);
         }else{
             return false;
         }

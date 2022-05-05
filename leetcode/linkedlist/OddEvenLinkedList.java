@@ -1,4 +1,4 @@
-package linkedlist;
+package LinkedList;
 /** #328. Odd Even Linked List[M][TopInterviews]
  * Given the head of a singly linked list,
  * group all the nodes with odd indices together

@@ -1,3 +1,9 @@
+package Patterns.BFS;
+
+import java.util.*;
+
+import Patterns.TreeNode;
+
 public class AverageLevelBT {
     //BFS: O(N), Space: O(M) M is the largest size of queue
     public List<Double> averageOfLevels(TreeNode root) {

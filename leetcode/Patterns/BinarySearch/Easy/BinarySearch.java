@@ -3,6 +3,7 @@
  * function to search target in nums, return index or -1
  * O(LogN) 
  */
+package Patterns.BinarySearch.Easy;
 public class BinarySearch {
     public int search(int[] nums, int target) {
         int mid = 0;

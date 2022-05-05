@@ -1,5 +1,10 @@
 /**572 SubTree of another tree
  * Tree Traverse Recursion */
+package Patterns.DFS;
+
+import java.util.*;
+
+import Patterns.TreeNode;
 public class isSubTree {
 
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {

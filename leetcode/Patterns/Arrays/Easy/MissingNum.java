@@ -1,3 +1,7 @@
+package Patterns.Arrays.Easy;
+
+import java.util.Arrays;
+
 /**
  * #268 Easy Array Bit Manipulation
  * Given an array nums containing n distinct numbers in the range [0, n], 
@@ -32,12 +36,13 @@ public class MissingNum {
         while(left <=right){
             int mid = left + (right-left)/2;
             if(nums[mid]>mid){
-                rihgt = mid-1;
+                right = mid-1;
             }else{
                 left = mid+1;
             }
-            return left;
+            
         }
+        return left;
 
     }
         // Method 2, Math Trick: O(N)

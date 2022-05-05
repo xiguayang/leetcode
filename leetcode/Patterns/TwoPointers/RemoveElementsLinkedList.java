@@ -1,3 +1,6 @@
+package Patterns.TwoPointers;
+
+import java.util.*;
 public class RemoveElementsLinkedList {
     //interative method: 
     // must have a dummyNode to record new linkedlist

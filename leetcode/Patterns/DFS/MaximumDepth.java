@@ -1,7 +1,8 @@
-import java.util.LinkedList;
-import java.util.Queue;
+package Patterns.DFS;
 
-import javax.swing.tree.TreeNode;
+import java.util.*;
+
+import Patterns.TreeNode;
 /**104 */
 public class MaximumDepth {
     //Method 1 Recursion

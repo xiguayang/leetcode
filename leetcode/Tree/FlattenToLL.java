@@ -1,5 +1,7 @@
 package Tree;
 
+import Tree.TreeNode;
+
 /**#116 Flatten BT to a linked list[M]
 Given the root of a BT, the return linked list s
 hould use the same TreeNode class w

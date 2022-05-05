@@ -1,4 +1,4 @@
-package linkedlist;
+package LinkedList;
 /**#1290 Binary Number in Linked List to together [E]
  * Given head which is a reference node to a singly-linked list.
  * The value of each node in the linked list is either 0 or 1.

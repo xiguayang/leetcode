@@ -1,7 +1,7 @@
-import java.util.LinkedList;
-import java.util.Queue;
+package Patterns.BFS;
 
-import javax.swing.tree.TreeNode;
+import java.util.*;
+import Patterns.TreeNode;
 
 /**
  * 111 Minimum Depth of Binary Tree

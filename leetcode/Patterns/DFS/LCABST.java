@@ -1,4 +1,10 @@
+package Patterns.DFS;
+
+import java.util.*;
+
+import Patterns.TreeNode;
 public class LCABST {
+    
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         //Recursion O(n)
         //Traversal the tree
@@ -11,7 +17,7 @@ public class LCABST {
         if(root.val<q.val && root.val<p.val){
             return lowestCommonAncestor(root.right,p,q);
         }else if(root.val> p.val && root.val > q.val){
-             lowestCommonAncestor(root.left,p,q);
+            return lowestCommonAncestor(root.left,p,q);
             
         }else{
             return root;

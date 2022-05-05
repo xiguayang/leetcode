@@ -1,3 +1,4 @@
+package Patterns.Arrays.Easy;
 // 2022 Easy Array
 public class ConvertArrayTo2D {
     public int[][] construct2DArray(int[] original, int m, int n) {

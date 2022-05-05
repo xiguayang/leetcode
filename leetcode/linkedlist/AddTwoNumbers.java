@@ -1,4 +1,4 @@
-package linkedlist;
+package LinkedList;
 /** #2 Add Two Numbers[M][Top100]
  * You are given two non-empty linked lists representing two non-negative integers.
  * The digits are stored in reverse order,

@@ -1,4 +1,7 @@
 // 21. Merge 2 Sorted Lists
+package Patterns.TwoPointers;
+
+import java.util.*;
 public class MergeSortedLists {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode dumyNode = new ListNode();

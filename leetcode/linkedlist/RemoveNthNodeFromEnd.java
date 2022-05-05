@@ -1,4 +1,4 @@
-package linkedlist;
+package LinkedList;
 /**#19. Remove Nth Node From End of List[M][top100]
  * Given the head of a linked list,
  * remove the nth node from the end of the list and return its head.

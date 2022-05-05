@@ -1,3 +1,6 @@
+package Patterns.TwoPointers;
+
+import java.util.*;
 public class backspaceStringCompare {
     public boolean backspaceCompare(String s, String t) {
         return backspaceStringBuilder(s).equals(backspaceStringBuilder(t));

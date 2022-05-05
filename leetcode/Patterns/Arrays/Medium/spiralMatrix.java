@@ -29,7 +29,8 @@ public class spiralMatrix {
         int startX = 0;
         int startY = 0;
         while(loop>0){
-            for()
+            //todo
         }
+        return res;
     }
 }

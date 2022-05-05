@@ -1,3 +1,7 @@
+package Patterns.Arrays.Easy;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *  Easy Array (268)
  * 448. Find All Numbers Disappeared in an Array

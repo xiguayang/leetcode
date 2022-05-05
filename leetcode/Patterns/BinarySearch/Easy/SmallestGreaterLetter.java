@@ -6,6 +6,7 @@
 
 For example, if target == 'z' and letters == ['a', 'b'], the answer is 'a'.
  */
+package Patterns.BinarySearch.Easy;
 public class SmallestGreaterLetter {
     public char nextGreatestLetter(char[] letters, char target) {
         int l=0;
