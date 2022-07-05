@@ -17,35 +17,6 @@
     [ ] Missing Number
     [ ] Reverse Bits
 
-### Dynamic Programming
-    [ ] Climbing Stairs
-    [ ] Coin Change
-    [ ] Longest Increasing Subsequence
-    [ ] Longest Common Subsequence
-    [ ] Word Break Problem
-    [ ] Combination Sum
-    [ ] House Robber
-    [ ] House Robber II
-    [ ] Decode Ways
-    [ ] Unique Paths
-    [ ] Jump Game
-
-### Graph
-    [ ] Clone Graph
-    [ ] Course Schedule
-    [ ] Pacific Atlantic Water Flow
-    [ ] Number of Islands
-    [ ] Longest Consecutive Sequence
-    [ ] Alien Dictionary (Leetcode Premium)
-    [ ] Graph Valid Tree (Leetcode Premium)
-    [ ] Number of Connected Components in an Undirected Graph (Leetcode Premium)
- 
- ### Interval
-    [ ] Insert Interval
-    [ ] Merge Intervals
-    [ ] Non-overlapping Intervals
-    [ ] Meeting Rooms (Leetcode Premium)
-    [ ] Meeting Rooms II (Leetcode Premium)
 
 ### Linked List
     [ ] Reverse a Linked List
@@ -55,11 +26,6 @@
     [ ] Remove Nth Node From End Of List
     [ ] Reorder List
 
-### Matrix
-    [ ] Set Matrix Zeroes
-    [ ] Spiral Matrix
-    [ ] Rotate Image
-    [ ] Word Search
 
 ### String
     [x] Longest Substring Without Repeating Characters (sliding window, hashmap)
@@ -89,7 +55,43 @@
     [ ] Add and Search Word
     [ ] Word Search II
 
+### Dynamic Programming
+    [ ] Climbing Stairs
+    [ ] Coin Change
+    [ ] Longest Increasing Subsequence
+    [ ] Longest Common Subsequence
+    [ ] Word Break Problem
+    [ ] Combination Sum
+    [ ] House Robber
+    [ ] House Robber II
+    [ ] Unique Paths
+    [ ] Jump Game
+    [ ] Decode Ways
+
 ### Heap
     [ ] Merge K Sorted Lists
     [ ] Top K Frequent Elements
     [ ] Find Median from Data Stream
+
+### Graph
+    [ ] Clone Graph
+    [ ] Course Schedule
+    [ ] Pacific Atlantic Water Flow
+    [ ] Number of Islands
+    [ ] Longest Consecutive Sequence
+    [ ] Alien Dictionary (Leetcode Premium)
+    [ ] Graph Valid Tree (Leetcode Premium)
+    [ ] Number of Connected Components in an Undirected Graph (Leetcode Premium)
+ 
+ ### Interval
+    [ ] Insert Interval
+    [ ] Merge Intervals
+    [ ] Non-overlapping Intervals
+    [ ] Meeting Rooms (Leetcode Premium)
+    [ ] Meeting Rooms II (Leetcode Premium)
+
+### Matrix
+    [ ] Set Matrix Zeroes
+    [ ] Spiral Matrix
+    [ ] Rotate Image
+    [ ] Word Search

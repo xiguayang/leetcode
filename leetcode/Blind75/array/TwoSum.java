@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+import BinarySearchTree.TreeNode;
+
 public class TwoSum {
         /**
      * 1. Two Sum [E] Given an array of integers nums and an integer target, return

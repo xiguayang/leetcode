@@ -31,7 +31,7 @@ public class IsBST {
         inOrder(root.right);
     }
 
-    // Method 2: Inorder Traversal Structure
+    // Method 2: Inorder Traversal Structure DFS
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         if (root == null)
@@ -85,5 +85,16 @@ public class IsBST {
             return false;
 
         return true;
+    }
+
+    //DFS
+    public boolean isValidBSTDFS(TreeNode root){
+        return isValidBSTDFS(root, Long.MIN_VALUE, Long.MAX_VALUE);
+    }
+    private boolean isValidBSTDFS(TreeNode root, long minValue, long maxValue) {
+        if(root==null) return true;
+        if(root.val>= maxValue || root.val<minValue) return false;
+
+        return isValidBSTDFS(root.left,minValue,root.val) && isValidBSTDFS(root.right,root.val,maxValue);
     }
 }
